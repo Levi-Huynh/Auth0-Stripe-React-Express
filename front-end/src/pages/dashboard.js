@@ -6,6 +6,7 @@ import Can from "../components/Can";
 import Logout from "../components/Logout";
 import Profile from "../components/Profile";
 import PostsList from "../components/PostsList";
+import StripeBtn from "../components/stripeBtn";
 
 const DashboardPage = () => (
  <AuthConsumer>
@@ -20,6 +21,7 @@ const DashboardPage = () => (
           <Logout />
           <Profile />
           <PostsList />
+          <StripeBtn/>
         </div>
       )}
       no={() => <Redirect to="/" />}
