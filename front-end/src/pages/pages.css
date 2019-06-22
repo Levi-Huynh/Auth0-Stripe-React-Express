@@ -1,0 +1,12 @@
+body {
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+   
+  }
+
+  .wrapper{
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+  }
