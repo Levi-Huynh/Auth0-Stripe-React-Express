@@ -7,6 +7,10 @@ import DashboardPage from './pages/dashboard';
 import CallbackPage from "./pages/callback";
 import Auth from "./components/Auth";
 
+const dotenv = require("dotenv");
+dotenv.config()
+
+
 function App() {
   return (
     <div className="App container">

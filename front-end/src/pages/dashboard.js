@@ -7,6 +7,7 @@ import Logout from "../components/Logout";
 import Profile from "../components/Profile";
 import PostsList from "../components/PostsList";
 import StripeBtn from "../components/stripeBtn";
+import DropzoneJ from '../components/Dropzone';
 
 const DashboardPage = () => (
  <AuthConsumer>
@@ -22,6 +23,7 @@ const DashboardPage = () => (
           <Profile />
           <PostsList />
           <StripeBtn/>
+          <DropzoneJ/>
         </div>
       )}
       no={() => <Redirect to="/" />}
