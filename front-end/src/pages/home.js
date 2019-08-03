@@ -1,28 +1,34 @@
-import React from 'react';
+import React from "react";
 import { Redirect } from "react-router-dom";
 
 import { AuthConsumer } from "../authContext";
 import Login from "../components/Login";
 import PostsList from "../components/PostsList";
-import './pages.css'
+import "./pages.css";
 
-var bg=require('../img/pine.jpg');
+var bg = require("../img/gw.jpg");
 
 const HomePage = () => (
-    <AuthConsumer>
+  <AuthConsumer>
     {({ authenticated }) =>
       authenticated ? (
         <Redirect to="/dashboard" />
       ) : (
-        <div  className="wrapper" style ={{ backgroundImage: "url("+bg+")",  backgroundPosition: 'center',
-        backgroundSize: 'cover',
-        backgroundRepeat: 'no-repeat' }} >
+        <div
+          className="wrapper"
+          style={{
+            // backgroundImage: "url(" + bg + ")",
+            backgroundPosition: "center",
+            backgroundSize: "cover",
+            backgroundRepeat: "no-repeat"
+          }}
+        >
           <header>
-          <h2>Welcome to React RBAC Tutorial.</h2>
+            <h2>Welcome to React RBAC Tutorial.</h2>
           </header>
           <main>
-          <Login />
-          <PostsList />
+            <Login />
+            <PostsList />
           </main>
         </div>
       )
