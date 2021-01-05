@@ -4,7 +4,7 @@
   "private": true,
   "dependencies": {
     "auth0-js": "^9.10.4",
-    "axios": "^0.19.0",
+    "axios": "^0.21.1",
     "create-react-context": "^0.3.0",
     "dotenv": "^8.0.0",
     "prop-types": "^15.7.2",
